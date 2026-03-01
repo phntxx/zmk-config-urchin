@@ -56,6 +56,11 @@
             bindings = <&kp RET>;
             key-positions = <8 9>;
         };
+
+        COMBO_MLG {
+            bindings = <&to 5>;
+            key-positions = <30 31 32 33>;
+        };
     };
 
     keymap {
@@ -123,10 +128,10 @@
 
         game_layer {
             bindings = <
-&kp G      &kp Q  &kp W  &kp E   &kp R   &trans  &kp PG_UP  &kp UP    &kp PG_DN  &trans
-&kp H      &kp A  &kp S  &kp D   &kp F   &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans
-&kp LSHFT  &kp Z  &kp X  &kp C   &kp V   &trans  &trans     &trans    &trans     &trans
-                         &trans  &trans  &trans  &trans
+&kp G      &kp Q  &kp W  &kp E   &kp R      &trans  &kp PG_UP  &kp UP    &kp PG_DN  &trans
+&kp H      &kp A  &kp S  &kp D   &kp F      &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans
+&kp LSHFT  &kp Z  &kp X  &kp C   &kp V      &trans  &trans     &trans    &trans     &to 0
+                         &trans  &kp SPACE  &trans  &trans
             >;
 
             label = "GAM";
